@@ -1,0 +1,87 @@
+/* AdminProductos.css */
+.admin-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.admin-header {
+    border-bottom: 3px solid #D32F2F;
+    padding-bottom: 10px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.alert {
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.alert-error {
+    background-color: #d32f2f;
+}
+
+.alert-success {
+    background-color: #2e7d32;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #D32F2F;
+}
+
+.form-control:disabled {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+    color: #94a3b8;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #D32F2F;
+}
