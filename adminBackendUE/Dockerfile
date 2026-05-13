@@ -1,9 +1,8 @@
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
+RUN echo "spring.application.name=adminBackendUE\nserver.port=8080\nspring.jpa.hibernate.ddl-auto=update\nspring.jpa.show-sql=true\nspring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect" > src/main/resources/application.properties
 RUN mvn clean package -DskipTests
-
-RUN mvn clean package -DskipTests -Dmaven.resources.skip=true
 
 
 FROM eclipse-temurin:21-jre
