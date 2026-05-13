@@ -14,7 +14,7 @@ const AdminProductos = () => {
     const [error, setError] = useState('');
     const [exito, setExito] = useState('');
 
-    const API_BASE_URL = "http://localhost:8080/api";
+    const API_BASE_URL = "https://administracionudlaeatsmvc.onrender.com/api";
 
     useEffect(() => {
         axios.get(`${API_BASE_URL}/campus`)
